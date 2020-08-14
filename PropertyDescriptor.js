@@ -1,7 +1,7 @@
 //////////// With object literal ////////////////////
-var person = { id: 1, name: "Irfan" };
+let person = { id: 1, name: "Irfan" };
 console.log(person);
-var salaryProperty = { value: 10000, writable: true, enumerable: true, configurable: false };
+let salaryProperty = { value: 10000, writable: true, enumerable: true, configurable: false };
 Object.defineProperty(person, "Salary", salaryProperty);
 console.log(person);
 person.Salary = 15000;
@@ -14,7 +14,7 @@ function Emp(id, name) {
     Object.defineProperty(this, "name", { value: name, writable: true, enumerable: true });
 }
 
-var obj = new Emp(1, "Irfan");
+let obj = new Emp(1, "Irfan");
 obj.name = "Khan";
 obj.id = 8;
 console.log(obj);
@@ -28,7 +28,7 @@ class Company {
     }
 }
 
-var CompanyObj = new Emp(1, "Salman");
+let CompanyObj = new Emp(1, "Salman");
 CompanyObj.name = "Khan";
 CompanyObj.id = 8;
 console.log(CompanyObj);
