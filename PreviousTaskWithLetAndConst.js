@@ -1,5 +1,5 @@
-//1:
 ////////////////////// Class ////////////////////////////////////
+//::1:://
 class Account {
     constructor(account, name, balance) {
         this.account = account;
@@ -16,10 +16,12 @@ let obj = new Account(1, "Irfan", 50000);
 let obj1 = new Account(2, "Manish", 60000);
 obj.print();
 obj1.print();
+//::1:://
+////////////////////// Class ////////////////////////////////////
 
 
-//2:
 ////////////////////// Datatypes ////////////////////////////////////
+//::2:://
 // 1: Number
 let n = 5; console.log("Value is " + n, "& Type is " + typeof (n));
 // 2: String
@@ -35,10 +37,12 @@ let u; console.log("Value is " + u, "& Type is " + typeof (u));
 // 6 : null
 let nl = null;
 console.log("Value is " + nl);
+//::2:://
+////////////////////// Datatypes ////////////////////////////////////
 
 
-//3:
 ///////////////////////////// FirstJS//////////////////////////////////
+//::3:://
 let blank = {};
 console.log(blank);
 
@@ -72,10 +76,12 @@ let test2 = new Emp(2, "khan1");
 console.log(test1.id);
 console.log(test1.name);
 test1.print();
+//::3:://
+///////////////////////////// FirstJS//////////////////////////////////
 
 
-//4:
 ///////////////////////// Fraud Class ///////////////////////////
+//::4:://
 class Emp {
     constructor(id, name) {
         this.id = id;
@@ -90,10 +96,12 @@ class Emp {
 let obj = new Emp(1, "Irfan");
 console.log(obj);
 obj.print();
+//::4:://
+///////////////////////// Fraud Class ///////////////////////////
 
 
-//5:
 ///////////////////// Proto ////////////////////////////////
+//::5:://
 let bigB = {
     name: "Amitabh",
     surname: "Bachchan"
@@ -111,10 +119,12 @@ bayB.name = "Aradhya";
 console.log("My Name is " + bayB.name, bayB.surname);
 console.log("My Father is " + bayB.__proto__.name);
 console.log("My Grand Father is " + bayB.__proto__.__proto__.name);
+//::5:://
+///////////////////// Proto ////////////////////////////////
 
 
-//6:
 /////////////////// Function ProtoType /////////////////////////////
+//::6:://
 function Emp(id, name) {
     this.id = id;
     this.name = name;
@@ -142,10 +152,12 @@ eich.print();
 marc.print();
 eich.commonPrint();
 marc.commonPrint();
+//::6:://
+/////////////////// Function ProtoType /////////////////////////////
 
 
-//7:
 //////////////////////// Lambda ////////////////////////
+//::7:://
 function sqr(x) {
     return x * x;
 }
@@ -162,3 +174,5 @@ console.log(sqr(5));
 
 let add = (x, y) => x + y;
 console.log(add(5, 7));
+//::7:://
+//////////////////////// Lambda ////////////////////////
